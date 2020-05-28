@@ -10,7 +10,7 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   #first-display h1 {
     font-size: 30px!important;
   }
