@@ -21,7 +21,7 @@ function openMobileNav() {
     var nbr_links = document.querySelector("#header-buttons").querySelectorAll("a").length;
     var current_link = 0;
     addLink(current_link);
-    
+
     var id = setInterval(function() {
 
       current_link++;
@@ -32,7 +32,7 @@ function openMobileNav() {
         addLink(current_link);
       }
 
-    }, 200);
+    }, 100);
   }
 
 }

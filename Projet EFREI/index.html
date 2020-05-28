@@ -17,9 +17,9 @@
       </div>
       <nav id="header-buttons" class="in-header">
         <img id="menu-icon" src="resources/menuIcon.png" onclick="openMobileNav()" style="display: none; width: 50px;">
-        <a href="index.html" class="header-button"> Qui sommes-nous ? </a>
-        <a class="header-button"> L'ingéniosité du projet </a>
-        <a class="header-button"> Nous rencontrer </a>
+        <a href="pages/qui-sommes-nous/index.html" class="header-button"> Qui sommes-nous ? </a>
+        <a href="pages/l-ingeniosite-du-projet/index.html" class="header-button"> L'ingéniosité du projet </a>
+        <a href="pages/la-boutique/index.html" class="header-button"> Notre boutique </a>
         <a class="header-button"> Notre boutique </a>
         <a class="header-button"> A vous de jouer ! </a>
       </nav>
@@ -40,7 +40,7 @@
       <section id="second-info">
         <h1>Un rubik's cube simple.</h1>
         <p>Le casse-tête qui a brisé de tant de grands esprits est maintenant complétable d'un simple mouvement de main dans ce nouveau format original !</p>
-        <button> Comprendre le projet </button>
+        <a href="pages/l-ingeniosite-du-projet/index.html"> <button> Comprendre le projet </button> </a>
       </section>
       <section class="second-showing">
         <img src="resources/showing.jpg">
@@ -54,14 +54,18 @@
         <img src="resources/quote.webp" class="quote-img rotate">
         <p class="author"> —Bille Gates</p>
       </cite>
-      <button onclick="nextQuote()"> Un autre avis ! </button>
+      <div>
+        <button onclick="nextQuote()"> Un autre avis ! </button>
+        <a href="#"><button onclick=""> Ajoutez le vôtre ! </button></a>
+      </div>
+
     </article>
 
     <footer>
       <section id="left">
         <h1>Nous contacter :</h1>
         <nav>
-          <a href="#">Qui sommes-nous ?</a>
+          <a href="pages/qui-sommes-nous/index.html">Qui sommes-nous ?</a>
           <a href="#" style="color: #a29bfe">Twitter</a>
           <a href="#" style="color: #0984e3">Facebook</a>
           <a href="#" style="color: #e66465">Instagram</a>
@@ -70,9 +74,9 @@
       <section>
         <h1>Crédits</h1>
         <nav>
-          <a href="#">Matthieu Hanania</a>
-          <a href="#">Pierre Faber</a>
-          <a href="#">Tristan Fievet</a>
+          <a href="pages/qui-sommes-nous/index.html#matthieu">Matthieu Hanania</a>
+          <a href="pages/qui-sommes-nous/index.html#pierrot">Pierre Faber</a>
+          <a href="pages/qui-sommes-nous/index.html#tristan">Tristan Fievet</a>
         </nav>
       </section>
       <b>Powered by bigstones.fr</b>

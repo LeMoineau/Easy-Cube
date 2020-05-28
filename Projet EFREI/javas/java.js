@@ -3,11 +3,13 @@ var quote = ["ça fait du bien aux neurones !",
   "Un concept révolutionnaire",
   "Une équipe exceptionnelle et pleine de ressources",
   "Le 'hand-spinner' moderne...",
-  "Je passe à la télé là ?"];
+  "L'arme secrète de ma prochaine armure !",
+  "Je passe à la télé maman ?"];
 var author = ["Bille Gates",
   "Emmannuelle Macron",
   "Frédéric Meunié",
   "économiste anonyme",
+  "Tony Stark",
   "enfant Billy"];
 
 var current_quote = 0;
