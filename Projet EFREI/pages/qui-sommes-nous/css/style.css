@@ -1,0 +1,55 @@
+
+#first-display {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #74b9ff;
+  color: white;
+
+}
+
+#first-display h1 {
+
+  font-size: 40px;
+  margin: 0;
+
+}
+
+#first-display p {
+
+  font-size: 17px;
+
+}
+
+.perso-display {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+
+}
+
+.perso-display section {
+  flex: 1;
+  min-height: 400px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.perso-info h1, .perso-info p {
+
+  width: 80%;
+  color: #2d3436;
+  text-align: justify;
+
+}

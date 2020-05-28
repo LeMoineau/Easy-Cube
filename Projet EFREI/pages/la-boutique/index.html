@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="../../resources/logo.png">
   </head>
+
   <body>
 
     <header>
@@ -27,9 +28,97 @@
     </header>
 
     <article id="first-display">
-      <h1>Comment se procurer le plus vite nos merveilles ?</h1>
-      <p>L'élite de la nation pour créer l'élite des projets</p>
+      <h1>Les enchères sont ouvertes</h1>
+      <p>Faites vite, la demande arrive en masse !</p>
+      <a href="#boutique"><button>Accédez à la boutique</button></a>
     </article>
+
+    <article id="second-display">
+      <section>
+        <h2 id="title-graph1">Célébrité (en followers / 1000)</h2>
+        <div id="graph1" class="graph">
+          <div class="visu" style="background-color: #fd79a8">
+            <p class="info">0</p>
+          </div>
+        </div>
+
+        <h2 id="title-graph2">Demandes (en nbr / 100)</h2>
+        <div id="graph2" class="graph">
+          <div class="visu" style="background-color: #a29bfe">
+            <p class="info">0</p>
+          </div>
+        </div>
+
+        <h2 id="title-graph3">Prix moyens des articles (en € / 10)</h2>
+        <div id="graph3" class="graph">
+          <div class="visu" style="background-color: #ffeaa7">
+            <p class="info">0</p>
+          </div>
+        </div>
+      </section>
+      <section style="background-color: #74b9ff">
+
+        <h1>Un succès grandissant chaque seconde</h1>
+        <p>Suite aux différentes actions de nos équipes, l'Easy's cube croule sous une pluie infernale de demande. En effet, allier personnel charismatique,
+        produit révolutionnaire et marketing parfait ne fait pas bon ménage. Mais ce n'est pas une raison pour ne pas acheter !</p>
+        <a href="#boutique"><button>Profiter de nos offres !</button></a>
+
+      </section>
+    </article>
+
+    <article id="boutique">
+
+      <h1>Notre boutique</h1>
+      <section id="item-container">
+        <div class="item" onclick="showPaiement()">
+          <h3>Le Easy's cube</h3>
+          <img src="../../resources/logo2.png" style="width: 50%;">
+          <h4 id="prix1">12€</h4>
+        </div>
+        <div class="item" onclick="showPaiement()">
+          <h3>T-shirt "okunrapor"</h3>
+          <img src="https://image.flaticon.com/icons/png/512/682/682915.png" style="width: 60%;">
+          <h4 id="prix2">12€</h4>
+        </div>
+        <div class="item" onclick="showPaiement()">
+          <h3>Poster presque design</h3>
+          <img src="../../resources/showing.jpg" style="width: 60%; border-radius: 3px;">
+          <h4 id="prix3">12€</h4>
+        </div>
+      </section>
+
+    </article>
+
+    <article id="paiement">
+      <h1>Vite les prix flambent, entre tes coordonnées banquaires !</h1>
+      <p style="font-size: 12px; margin-bottom: 30px">bien sûr ne le faites pas vraiment...</p>
+      <p>Votre numéro de compte</p>
+      <div class="paiement-line">
+        <input type="text" placeholder="0666">
+        <input type="text" placeholder="0666">
+        <input type="text" placeholder="0666">
+        <input type="text" placeholder="0666">
+      </div>
+      <div class="paiement-line" style="justify-content: space-around; width: 30%">
+        <div class="">
+          <p>Date d'expiration</p>
+          <input type="text" placeholder="07/01">
+        </div>
+        <div class="">
+          <p>Cryptogramme</p>
+          <input type="text" placeholder="666">
+        </div>
+      </div>
+      <div class="paiement-line">
+        <button onclick="surprise()"> Nous donner libre accès à votre compte </button>
+        <button onclick="showPaiement()"> Sortir </button>
+      </div>
+    </article>
+
+    <div id="surprise">
+      <img src="https://vignette.wikia.nocookie.net/welcometothegame/images/4/4f/HAHAHA...HAAA.png/revision/latest/scale-to-width-down/340?cb=20160524002212">
+      <h1 id="surprise-msg"></h1>
+    </div>
 
     <footer>
       <section id="left">

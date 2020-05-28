@@ -51,7 +51,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 
 }
 
@@ -84,9 +84,25 @@
 
 }
 
+#to-play-mobile {
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  background-color: #dfe6e9;
+  line-height: 50px;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+
 @media (max-width: 450px) {
   #tableau-score {
     overflow: auto!important;
+  }
+
+  #to-play-mobile {
+    display: block!important;
   }
 }
 
@@ -143,7 +159,7 @@
 #third-display section {
 
   flex: 1;
-  min-width: 400px;
+  min-width: 200px;
   min-height: 400px;
   display: flex;
   flex-direction: column;

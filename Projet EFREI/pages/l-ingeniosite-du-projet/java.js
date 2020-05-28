@@ -52,6 +52,35 @@ function checkEnter(ele, event) {
 
 }
 
+function mobileTap() {
+  if (!pPressed && !inEdit) {
+
+    pPressed = true;
+    date = new Date();
+
+    var id = setInterval(function() {
+      if (!pPressed) clearInterval(id);
+      else {
+        result = (new Date().getTime() - date.getTime()) / 1000;
+        document.querySelector("#minuteur").textContent = result.toFixed(3);
+      }
+    }, 1);
+
+    document.querySelector("#to-play-mobile").textContent = "A";
+
+  } else if (pPressed) {
+
+    finalDate = new Date();
+    pPressed = false;
+    result = (finalDate.getTime() - date.getTime()) / 1000;
+    document.querySelector("#minuteur").textContent = result.toFixed(3) + "s";
+    date = null;
+    addScore(result);
+    document.querySelector("#to-play-mobile").textContent = "P";
+
+  }
+}
+
 var pPressed = false;
 var inEdit = false;
 var date = null;
