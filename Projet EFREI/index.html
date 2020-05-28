@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Easy's cube</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="resources/logo.png">
+  </head>
+  <body>
+
+    <header>
+      <div id="header-logo" class="in-header">
+        <a href="index.html">Easy's cube</a>
+      </div>
+      <nav id="header-buttons" class="in-header">
+        <img id="menu-icon" src="resources/menuIcon.png" onclick="openMobileNav()" style="display: none; width: 50px;">
+        <a href="index.html" class="header-button"> Qui sommes-nous ? </a>
+        <a class="header-button"> L'ingéniosité du projet </a>
+        <a class="header-button"> Nous rencontrer </a>
+        <a class="header-button"> Notre boutique </a>
+        <a class="header-button"> A vous de jouer ! </a>
+      </nav>
+      <nav id="mobile-nav" style="display: none">
+
+      </nav>
+    </header>
+
+    <article id="first-display">
+      <img src="resources/logo2.png" style="width: 100px;">
+      <div class="first-desc">
+        <h1>Easy's cube</h1>
+        <p>Le Rubik's cube pour les petites têtes</p>
+      </div>
+    </article>
+
+    <article id="second-display">
+      <section id="second-info">
+        <h1>Un rubik's cube simple.</h1>
+        <p>Le casse-tête qui a brisé de tant de grands esprits est maintenant complétable d'un simple mouvement de main dans ce nouveau format original !</p>
+        <button> Comprendre le projet </button>
+      </section>
+      <section class="second-showing">
+        <img src="resources/showing.jpg">
+      </section>
+    </article>
+
+    <article id="third-display">
+      <cite>
+        <img src="resources/quote.webp" class="quote-img">
+        ça fait du bien aux neurones !
+        <img src="resources/quote.webp" class="quote-img rotate">
+        <p class="author"> —Bille Gates</p>
+      </cite>
+      <button onclick="nextQuote()"> Un autre avis ! </button>
+    </article>
+
+    <footer>
+      <section id="left">
+        <h1>Nous contacter :</h1>
+        <nav>
+          <a href="#">Qui sommes-nous ?</a>
+          <a href="#" style="color: #a29bfe">Twitter</a>
+          <a href="#" style="color: #0984e3">Facebook</a>
+          <a href="#" style="color: #e66465">Instagram</a>
+        </nav>
+      </section>
+      <section>
+        <h1>Crédits</h1>
+        <nav>
+          <a href="#">Matthieu Hanania</a>
+          <a href="#">Pierre Faber</a>
+          <a href="#">Tristan Fievet</a>
+        </nav>
+      </section>
+      <b>Powered by bigstones.fr</b>
+    </footer>
+
+  </body>
+
+  <script type="text/javascript" src="javas/java.js"> </script>
+  <script type="text/javascript" src="javas/header.js"> </script>
+</html>
