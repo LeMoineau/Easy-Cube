@@ -20,8 +20,9 @@
         <a href="../qui-sommes-nous/index.html" class="header-button"> Qui sommes-nous ? </a>
         <a href="index.html" class="header-button"> L'ingéniosité du projet </a>
         <a href="../la-boutique/index.html" class="header-button"> Notre boutique </a>
-        <a class="header-button"> Notre boutique </a>
-        <a class="header-button"> A vous de jouer ! </a>
+        <a href="../a-vous-de-jouer/index.html" class="header-button"> A vous de jouer ! </a>
+        <a href="../nos-collaborateurs/index.html" class="header-button"> Nos collaborateurs </a>
+        <a href="../d-autres-pepites/index.html" class="header-button"> D'autres pépites </a>
       </nav>
       <nav id="mobile-nav" style="display: none"> </nav>
     </header>
@@ -35,12 +36,13 @@
       <h1>Tu veux tenter de battre le record du monde ?</h1>
 
       <div id="middle-game">
-        <div id="minuteur">
+        <p id="minuteur">
           0.042s
-        </div>
+        </p>
         <div id="tableau-score">
           <h1>Tableau des scores</h1>
-          <div class="score"><input type="text" value="Pierrot le bo" readonly="true"/> — 0.006s</div>
+          <div class="score" time="0.003"><input type="text" value="Ysold le best" readonly="true"/> — 0.003s</div>
+          <div class="score" time="0.006"><input type="text" value="Pierrot le bo" readonly="true"/> — 0.006s</div>
         </div>
       </div>
 
@@ -48,17 +50,26 @@
       <h2>Appuie sur P pour lancer le chrono puis A pour l'arrêter !</h2>
     </article>
 
-    <article id="third-display">
+    <article class="third-display">
       <section style="background-color: #74b9ff;">
         <h1>Prendre le principe à contre-pied !</h1>
         <p>Tout l'intêret du Rubik's Cube réside dans l'admiration des mouvements des mains alliés à la puissance du cerveau pour aligner le plus petit temps
-         possible. Pour résoudre ce problème, nous sommes parti du but pour arrivé au départ : comment faire le plus petit temps possible ?
-         <br>Eh bien c'est facile ! Il suffit de simplifier à l'extreme le rubik's cube pour ne plus avoir de temps à perdre dans des mouvements de mains et
-         des gymnastiques de cerveaux ! Voici pour vous donc, le Rubik's cube 1x1 aussi appelé Easy's cube</p>
-        <p style="font-size: 10px;">On est bien sûr en réalité conscient de la perte total d'interêt pour le Rubik's cube mais ... chuuut</p>
+         possible. Pour résoudre ce problème, nous sommes parti du but pour arrivé au départ : comment faire le plus petit temps possible ?</p>
       </section>
       <section style="background-color: #ffeaa7;">
         <img src="../../resources/minuteur.png" style="height: 250px;">
+      </section>
+    </article>
+
+    <article class="third-display" style="flex-wrap: wrap-reverse">
+      <section style="background-color: white;">
+        <img src="../../resources/showing.jpg" style="height: 250px;">
+      </section>
+      <section style="background-color: #ff7675;">
+        <h1>Comment faire le plus petit temps possible ?</h1>
+        <p>Eh bien c'est facile ! Il suffit de simplifier à l'extreme le rubik's cube pour ne plus avoir de temps à perdre dans des mouvements de mains et
+        des gymnastiques de cerveaux ! Voici pour vous donc, le Rubik's cube 1x1 aussi appelé Easy's cube</p>
+        <p style="font-size: 10px;">On est bien sûr en réalité conscient de la perte total d'interêt pour le Rubik's cube ... chuuut</p>
       </section>
     </article>
 
@@ -75,9 +86,9 @@
       <section>
         <h1>Crédits</h1>
         <nav>
-          <a href="#matthieu">Matthieu Hanania</a>
-          <a href="#pierrot">Pierre Faber</a>
-          <a href="#tristan">Tristan Fievet</a>
+          <a href="../qui-sommes-nous/index.html#matthieu">Matthieu Hanania</a>
+          <a href="../qui-sommes-nous/index.html#pierrot">Pierre Faber</a>
+          <a href="../qui-sommes-nous/index.html#tristan">Tristan Fievet</a>
         </nav>
       </section>
       <b>Powered by bigstones.fr</b>

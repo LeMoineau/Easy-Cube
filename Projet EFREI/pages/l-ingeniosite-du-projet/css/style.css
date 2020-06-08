@@ -59,7 +59,8 @@
 
   font-family: 'Share Tech Mono', monospace;
   text-align: center;
-  width;: fit-content;
+  min-width: 200px;
+  width: auto;
   padding: 20px;
   font-size: 50px;
   border-radius: 5px;
@@ -76,7 +77,7 @@
   width: fit-content;
   padding: 20px;
   margin: 40px;
-  max-height: 300px;
+  height: 250px;
   border-radius: 5px;
   background-color: #00b894;
   overflow: hidden;
@@ -145,7 +146,7 @@
 
 }
 
-#third-display {
+.third-display {
 
   display: flex;
   flex-direction: row;
@@ -153,10 +154,11 @@
   align-items: center;
   flex-wrap: wrap;
   height: auto;
+  color: white;
 
 }
 
-#third-display section {
+.third-display section {
 
   flex: 1;
   min-width: 200px;
@@ -168,7 +170,7 @@
 
 }
 
-#third-display h1, #third-display p {
+.third-display h1, .third-display p {
 
   width: 80%;
   text-align: justify;

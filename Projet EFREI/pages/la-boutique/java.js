@@ -26,13 +26,13 @@ function updateGraphe(vari, id, max, range) {
   if (toChange > range) {
     if (vari == "followers") {
       followRange *= 10;
-      document.querySelector("#title-" + id).textContent = "Célébrité (en followers / " + followRange + ")";
+      document.querySelector("#title-" + id).textContent = "(en followers / " + followRange + ")";
     } else if (vari == "demandes") {
       demandeRange *= 10;
-      document.querySelector("#title-" + id).textContent = "Demandes (en nbr / " + demandeRange + ")";
+      document.querySelector("#title-" + id).textContent = "(en nbr / " + demandeRange + ")";
     } else {
       prixRange *= 10;
-      document.querySelector("#title-" + id).textContent = "Prix moyens des articles (en € / " + prixRange + ")";
+      document.querySelector("#title-" + id).textContent = "(en € / " + prixRange + ")";
     }
     range *= 10;
   }
@@ -40,11 +40,11 @@ function updateGraphe(vari, id, max, range) {
 
 }
 
-followers = 0;
+followers = 23;
 followRange = 1000;
-demandes = 0;
+demandes = 6;
 demandeRange = 100;
-prix = 1;
+prix = 2;
 prixRange = 10;
 
 setInterval(function() {

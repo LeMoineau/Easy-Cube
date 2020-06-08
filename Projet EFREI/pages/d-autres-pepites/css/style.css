@@ -1,0 +1,97 @@
+
+#first-display {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  background-color: #74b9ff;
+  color: black;
+  text-align: center;
+
+}
+
+#first-display h1 {
+
+  font-size: 40px;
+  margin: 0px;
+
+}
+
+#first-display p {
+
+  font-size: 17px;
+
+}
+
+.pepite-display {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+
+}
+
+.pepite-display section {
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  min-height: 400px;
+  background-color: white;
+  overflow: hidden;
+
+}
+
+.pepite-display h1 {
+
+  font-size: 25px;
+  text-align: center;
+  margin: 0px;
+
+}
+
+.pepite-display p {
+
+  margin: 5px;
+
+}
+
+.pepite-display img {
+
+  max-height: 400px;
+
+}
+
+#easter {
+
+  position: fixed;
+  bottom: 20px;
+  width: 500px;
+  min-height: 50px;
+  height: auto;
+  border-radius: 5px;
+  box-sizing: border-box;
+  left: calc(50% - 250px);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #b2bec3;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: justify;
+  transform: scale(0);
+  transition: all 0.5s linear;
+
+}

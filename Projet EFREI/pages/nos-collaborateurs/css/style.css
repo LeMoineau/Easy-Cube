@@ -1,0 +1,111 @@
+
+article {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #74b9ff;
+
+}
+
+#painting {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 70px);
+  height: auto;
+  flex: 1;
+  background-color: white;
+
+}
+
+#painting h1, #painting p {
+
+  margin: 5px;
+  font-size: 30px;
+
+}
+
+#painting p {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+#chooser {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 20px;
+
+}
+
+.fighter {
+
+  width: 100px;
+  height: 100px;
+
+}
+
+.fighter div {
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 125%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s linear;
+
+}
+
+.fighter:hover div {
+
+  background-size: 100px;
+  cursor: pointer;
+
+}
+
+#info {
+
+  width: 0;
+  min-width: 0;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  min-height: 400px;
+
+}
+
+.showed {
+
+  min-width: 200px!important;
+  flex: 0.5;
+
+}
+
+@media (max-width: 400px) {
+  .showed {
+    flex: 1!important;
+  }
+}
+
+.showed h1, .showed p {
+  width: 80%;
+  text-align: justify;
+  font-size: 25px;
+}
+
+.showed p {
+  font-size: 17px;
+}

@@ -129,6 +129,24 @@ body {
 
 }
 
+.graph-line {
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 80%;
+
+}
+
+.title-graph {
+
+  text-align: right!important;
+  width: fit-content!important;
+  white-space: nowrap;
+
+}
+
 #boutique {
 
   background-color: #ff7675;
