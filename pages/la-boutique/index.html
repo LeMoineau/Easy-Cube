@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Easy's cube - Notre boutique</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="../../resources/logo.png">
+  </head>
+
+  <body>
+
+    <header>
+      <div id="header-logo" class="in-header">
+        <a href="../../index.html">Easy's cube</a>
+      </div>
+      <nav id="header-buttons" class="in-header">
+        <img id="menu-icon" src="../../resources/menuIcon.png" onclick="openMobileNav()" style="display: none; width: 50px;">
+        <a href="../qui-sommes-nous/index.html" class="header-button"> Qui sommes-nous ? </a>
+        <a href="../l-ingeniosite-du-projet/index.html" class="header-button"> L'ingéniosité du projet </a>
+        <a href="index.html" class="header-button"> Notre boutique</a>
+        <a href="../a-vous-de-jouer/index.html" class="header-button"> A vous de jouer ! </a>
+        <a href="../nos-collaborateurs/index.html" class="header-button"> Nos collaborateurs </a>
+        <a href="../d-autres-pepites/index.html" class="header-button"> D'autres pépites </a>
+      </nav>
+      <nav id="mobile-nav" style="display: none"> </nav>
+    </header>
+
+    <article id="first-display">
+      <h1>Les enchères sont ouvertes</h1>
+      <p>Faites vite, la demande arrive en masse !</p>
+      <a href="#boutique"><button>Accédez à la boutique</button></a>
+    </article>
+
+    <article id="second-display">
+      <section>
+        <div class="graph-line">
+          <h2>Célébrité</h2>
+          <h2 id="title-graph1" class="title-graph">(en followers / 1000)</h2>
+        </div>
+        <div id="graph1" class="graph">
+          <div class="visu" style="background-color: #fd79a8">
+            <p class="info">0</p>
+          </div>
+        </div>
+
+        <div class="graph-line">
+          <h2>Demandes</h2>
+          <h2 id="title-graph2" class="title-graph">(en nbr / 100)</h2>
+        </div>
+        <div id="graph2" class="graph">
+          <div class="visu" style="background-color: #a29bfe">
+            <p class="info">0</p>
+          </div>
+        </div>
+
+        <div class="graph-line">
+          <h2>Prix moyens des articles</h2>
+          <h2 id="title-graph3" class="title-graph"> (en € / 10)</h2>
+        </div>
+        <div id="graph3" class="graph">
+          <div class="visu" style="background-color: #ffeaa7">
+            <p class="info">0</p>
+          </div>
+        </div>
+      </section>
+      <section style="background-color: #74b9ff">
+
+        <h1>Un succès grandissant chaque seconde</h1>
+        <p>Suite aux différentes actions de nos équipes, l'Easy's cube croule sous une pluie infernale de demande. En effet, allier personnel charismatique,
+        produit révolutionnaire et marketing parfait ne fait pas bon ménage. Mais ce n'est pas une raison pour ne pas acheter !</p>
+        <a href="#boutique"><button>Profiter de nos offres !</button></a>
+
+      </section>
+    </article>
+
+    <article id="boutique">
+
+      <h1>Notre boutique</h1>
+      <section id="item-container">
+        <div class="item" onclick="showPaiement()">
+          <h3>Le Easy's cube</h3>
+          <img src="../../resources/logo2.png" style="width: 50%;">
+          <h4 id="prix1">12€</h4>
+        </div>
+        <div class="item" onclick="showPaiement()">
+          <h3>T-shirt "okunrapor"</h3>
+          <img src="https://image.flaticon.com/icons/png/512/682/682915.png" style="width: 60%;">
+          <h4 id="prix2">12€</h4>
+        </div>
+        <div class="item" onclick="showPaiement()">
+          <h3>Poster presque design</h3>
+          <img src="../../resources/showing.jpg" style="width: 60%; border-radius: 3px;">
+          <h4 id="prix3">12€</h4>
+        </div>
+      </section>
+
+    </article>
+
+    <article id="paiement">
+      <h1>Vite les prix flambent, entre tes coordonnées banquaires !</h1>
+      <p style="font-size: 12px; margin-bottom: 30px">bien sûr ne le faites pas vraiment...</p>
+      <p>Votre numéro de compte</p>
+      <div class="paiement-line">
+        <input type="text" placeholder="0666">
+        <input type="text" placeholder="0666">
+        <input type="text" placeholder="0666">
+        <input type="text" placeholder="0666">
+      </div>
+      <div class="paiement-line" style="justify-content: space-around; width: 30%">
+        <div class="">
+          <p>Date d'expiration</p>
+          <input type="text" placeholder="07/01">
+        </div>
+        <div class="">
+          <p>Cryptogramme</p>
+          <input type="text" placeholder="666">
+        </div>
+      </div>
+      <div class="paiement-line">
+        <button onclick="surprise()"> Nous donner libre accès à votre compte </button>
+        <button onclick="showPaiement()"> Sortir </button>
+      </div>
+    </article>
+
+    <div id="surprise">
+      <img src="https://vignette.wikia.nocookie.net/welcometothegame/images/4/4f/HAHAHA...HAAA.png/revision/latest/scale-to-width-down/340?cb=20160524002212">
+      <h1 id="surprise-msg"></h1>
+    </div>
+
+    <footer>
+      <section id="left">
+        <h1>Nous contacter :</h1>
+        <nav>
+          <a href="../qui-sommes-nous/index.html">Qui sommes-nous ?</a>
+          <a href="#" style="color: #a29bfe">Twitter</a>
+          <a href="#" style="color: #0984e3">Facebook</a>
+          <a href="#" style="color: #e66465">Instagram</a>
+        </nav>
+      </section>
+      <section>
+        <h1>Crédits</h1>
+        <nav>
+          <a href="../qui-sommes-nous/index.html#matthieu">Matthieu Hanania</a>
+          <a href="../qui-sommes-nous/index.html#pierrot">Pierre Faber</a>
+          <a href="../qui-sommes-nous/index.html#tristan">Tristan Fievet</a>
+        </nav>
+      </section>
+      <b>Powered by bigstones.fr</b>
+    </footer>
+
+  </body>
+
+  <script type="text/javascript" src="../../javas/java.js"> </script>
+  <script type="text/javascript" src="java.js"> </script>
+  <script type="text/javascript" src="../../javas/header.js"> </script>
+</html>

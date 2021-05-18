@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Easy's cube - Qui sommes-nous ?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="../../resources/logo.png">
+  </head>
+  <body>
+
+    <header>
+      <div id="header-logo" class="in-header">
+        <a href="../../index.html">Easy's cube</a>
+      </div>
+      <nav id="header-buttons" class="in-header">
+        <img id="menu-icon" src="../../resources/menuIcon.png" onclick="openMobileNav()" style="display: none; width: 50px;">
+        <a href="index.html" class="header-button"> Qui sommes-nous ? </a>
+        <a href="../l-ingeniosite-du-projet/index.html" class="header-button"> L'ingéniosité du projet </a>
+        <a href="../la-boutique/index.html" class="header-button"> Notre boutique </a>
+        <a href="../a-vous-de-jouer/index.html" class="header-button"> A vous de jouer ! </a>
+        <a href="../nos-collaborateurs/index.html" class="header-button"> Nos collaborateurs </a>
+        <a href="../d-autres-pepites/index.html" class="header-button"> D'autres pépites </a>
+      </nav>
+      <nav id="mobile-nav" style="display: none"> </nav>
+    </header>
+
+    <article id="first-display">
+      <h1>La fine équipe</h1>
+      <p>L'élite de la nation pour créer l'élite des projets</p>
+    </article>
+
+    <article id="matthieu" class="perso-display">
+      <section class="perso-info" style="background-color: #55efc4;">
+        <h1>Matthieu Hanania</h1>
+        <p>Un jeune homme académiquement brillant malgré un coté pleurnichard assez prononcé. Il a une facilité assez exceptionnelle de sociabilisation.
+        Pour cela, il est le pont entre nos équipes d'ingénieur (très compétentes et nombreuses) et les clients (très incompétents et nombreux). En soit,
+        c'est un homme (ou une femme) que l'on aime avoir à nos côtés pour toutes ses qualités mais aussi ses défauts.</p>
+        <button onclick="nextPassion('matthieu')">Ses passions (clique) ►</button>
+      </section>
+      <section class="perso-img">
+        <img src="https://i.pinimg.com/originals/49/18/e9/4918e946374bbab0fe57a5b51b9ed8f1.jpg"
+          style="height: 270px; max-width: 80vw" id="matthieu-passion">
+      </section>
+    </article>
+
+    <article id="pierrot" class="perso-display" style="flex-wrap: wrap-reverse">
+      <section class="perso-img">
+        <img src="https://www.manga-news.com/public/images/dvd/mysterieuses-cites-dor-S1-affiche.jpg"
+          style="height: 270px; max-width: 80vw" id="pierrot-passion">
+      </section>
+      <section class="perso-info" style="background-color: #ff7675;">
+        <h1>Pierre Faber</h1>
+        <p>Indéniablement le génie du groupe ! Grâce à ses mains tentaculaires, il arrive à écrire sur plus de 10 clavier en même temps pour terminer les
+        projets à temps. Malheuresement ce super-pouvoir (puisqu'il est un super-héros) a un point faible : la motivation. Il suffit d'un faux-espoir, une
+        grosse erreur ou une critique mal placée pour que ce pouvoir se cache aux yeux de tous et qu'il redevienne un étudiant lambda...</p>
+        <button onclick="nextPassion('pierrot')">◄ Ses passions</button>
+      </section>
+    </article>
+
+    <article id="tristan" class="perso-display">
+      <section class="perso-info" style="background-color: #ffeaa7;">
+        <h1>Tristan Fievet</h1>
+        <p>Un bon gros camarade ! Par sa virilité et son charisme naturel, ce jeune homme (un vrai cette fois) dirige vaillamment ses troupes pour les mêner
+        à la victoire. C'est nottament grâce à ces stratégies commerciales que le Easy's cube suscite aujourd'hui tant les esprits ! En résumé c'est un leader
+        naturel au charisme légendaire... mais attention à celui qui lui ferais un reproche...</p>
+        <button onclick="nextPassion('tristan')">Ses passions ►</button>
+      </section>
+      <section class="perso-img">
+        <img src="https://samvolleyball.fr/wp-content/uploads/2017/10/mva200_1.png"
+          style="height: 270px; max-width: 80vw" id="tristan-passion">
+      </section>
+    </article>
+
+    <footer>
+      <section id="left">
+        <h1>Nous contacter :</h1>
+        <nav>
+          <a href="index.html">Qui sommes-nous ?</a>
+          <a href="#" style="color: #a29bfe">Twitter</a>
+          <a href="#" style="color: #0984e3">Facebook</a>
+          <a href="#" style="color: #e66465">Instagram</a>
+        </nav>
+      </section>
+      <section>
+        <h1>Crédits</h1>
+        <nav>
+          <a href="#matthieu">Matthieu Hanania</a>
+          <a href="#pierrot">Pierre Faber</a>
+          <a href="#tristan">Tristan Fievet</a>
+        </nav>
+      </section>
+      <b>Powered by bigstones.fr</b>
+    </footer>
+
+  </body>
+
+  <script type="text/javascript" src="../../javas/java.js"> </script>
+  <script type="text/javascript" src="java.js"> </script>
+  <script type="text/javascript" src="../../javas/header.js"> </script>
+</html>

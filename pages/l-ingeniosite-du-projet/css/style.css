@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+#first-display {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ff7675;
+  color: white;
+  text-align: center;
+
+}
+
+#first-display h1 {
+
+  font-size: 40px;
+  margin: 0px;
+
+}
+
+#first-display p {
+
+  font-size: 17px;
+
+}
+
+#mini-jeu {
+
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+}
+
+#mini-jeu h2 {
+
+  font-size: 20px;
+  color: #b2bec3;
+
+}
+
+#middle-game {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+
+}
+
+#minuteur {
+
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+  min-width: 200px;
+  width: auto;
+  padding: 20px;
+  font-size: 50px;
+  border-radius: 5px;
+  background-color: #dfe6e9;
+  margin: 40px;
+
+}
+
+#tableau-score {
+
+  position: relative;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  padding: 20px;
+  margin: 40px;
+  height: 250px;
+  border-radius: 5px;
+  background-color: #00b894;
+  overflow: hidden;
+  scroll-behavior: smooth;
+
+}
+
+#to-play-mobile {
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  background-color: #dfe6e9;
+  line-height: 50px;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+
+@media (max-width: 450px) {
+  #tableau-score {
+    overflow: auto!important;
+  }
+
+  #to-play-mobile {
+    display: block!important;
+  }
+}
+
+#tableau-score h1 {
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px black;
+  cursor: default;
+
+}
+
+.score {
+
+  width: 100%;
+  font-size: 17px;
+  cursor: default;
+
+}
+
+.score input {
+
+  text-align: center;
+  cursor: default;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  width: 150px;
+  font-style: italic;
+  background-color: transparent;
+
+}
+
+.editable input {
+
+  font-style: normal;
+  cursor: text;
+  background-color: #55efc4;
+
+}
+
+.third-display {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  color: white;
+
+}
+
+.third-display section {
+
+  flex: 1;
+  min-width: 200px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.third-display h1, .third-display p {
+
+  width: 80%;
+  text-align: justify;
+
+}
